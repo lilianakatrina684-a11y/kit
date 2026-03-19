@@ -1,5 +1,29 @@
 # @sveltejs/kit
 
+## 2.56.0
+### Minor Changes
+
+
+- breaking: add `run()` method to queries, disallow awaiting queries outside render ([#15533](https://github.com/sveltejs/kit/pull/15533))
+
+
+- feat: use `hydratable` for remote function transport ([#15533](https://github.com/sveltejs/kit/pull/15533))
+
+
+### Patch Changes
+
+
+- fix: don't request new data when `.refresh` is called on a query with no cache entry ([#15533](https://github.com/sveltejs/kit/pull/15533))
+
+
+- fix: manage queries in their own `$effect.root` ([#15533](https://github.com/sveltejs/kit/pull/15533))
+
+
+- fix: avoid `inlineDynamicImports` deprecation warning when building the service worker with Vite 8 ([#15550](https://github.com/sveltejs/kit/pull/15550))
+
+
+- fix: deduplicate same-cache-key `batch` calls during SSR ([#15533](https://github.com/sveltejs/kit/pull/15533))
+
 ## 2.55.0
 ### Minor Changes
 
